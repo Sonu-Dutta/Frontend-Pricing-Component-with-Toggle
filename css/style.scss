@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import "./variable";
+
+@mixin flex($dir,$gap) {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  flex-direction: $dir;
+  gap: $gap;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 15px;
+body{
+  @include flex(column,0);
+  box-sizing: border-box;
+  padding: 2rem;
+  font-family: $body-font;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  main{
+    @include flex(column,1rem );
+    .top{
+      @include flex(column,1rem );
+      h1 {
+        color:$grayish-blue;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: .5rem;
+      }
+      .toggle{
+        cursor: pointer;
+        width: 3.8rem;
+        height: 2.3rem;
+        border-radius: 25px;
+        background: linear-gradient($gradient);
+        display: flex;
+        .btn{
+          cursor: pointer;
+          position: relative;
+          width: 1.7rem;
+          height: 1.7rem;
+          top: .3rem;
+          margin: 0 .3rem;
+          border-radius: 50%;
+          background-color: $very-light-grayish-blue;
+    
+        }        
+      }
+      span{
+        color: $light-grayish-blue;
+      }
+      .top-2{
+        @include flex(row,1rem);
+      }
+    }
+    .card{
+      @include flex(row,0 );
+      box-sizing: border-box;
+      padding: 1rem;
+   
+      p{
+        font-weight: bold;
+      }
+      .card-1,.card-3{
+        background-color: white;
+        height: 20rem;
+        box-shadow: 0 .5em 2em .5em rgba(59, 53, 85, 0.219);
+      }
+      .card-2{
+        background: linear-gradient($gradient);
+        color:white;
+        height: 23rem;
+      }
+      .card-1 span,.card-3 span {
+        color:$dark-grayish-blue;
+      }
+      .card-1 h1,.card-3 h1,.card-1 p,.card-3 p{
+        color: $dark-grayish-blue;
+      }
+    
+      .card-1,.card-2,.card-3{
+        @include flex(column,1rem );
+        padding: 3rem 2rem;
+        border-radius: .6rem;
+        
+        h1{
+          font-size: 1.23rem;
+          font-weight: 700;
+        }
+        hr{
+          width: 18rem;
+          border-width: 0.5px;
+          margin: 0 auto;
+          border-color: transparent;
+          border-color: $light-grayish-blue;
+          border-style: solid;
+          opacity: 0.5;
+        }
+        .amount{
+          @include flex(row,0.7 );
+          font-weight: bold;
+          font-size: 4.6rem;
+          .dollar{
+            font-size: 2.6rem;
+          }
+        }
+        button{
+          cursor: pointer;
+          width: 90%;
+          margin: 0 auto;
+          margin-top: 1rem;
+          border-radius: 10px;
+          border-color: transparent;
+          border-style: solid;
+          border-width: 1px;
+          padding: 0.8rem;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          word-spacing: 3px;
+          font-weight: 700;
+          text-align: center;
+        }
+        
+      }
+      .card-1 button:hover,
+  .card-3 button:hover {
+    background: transparent;
+    border-color: $light-grayish-blue;
+    color: $purple;
+    border-width: 1px;
+  }
+  .card-2 button:hover {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border-width: 1px;
+  }
+     
+    }
+    @media (max-width:1000px){
+      .card{
+        height: 100%;
+        @include flex(column,1.7rem );
+      }
+      .attribution{
+        display: none;
+      }
+     }
+  }
+}
+}
+.monthly {
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.anually {
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.card-2 button {
+  color: $purple;
+  background-color: white;
+
+}
+.card-1 button,
+.card-3 button {
+  color: white;
+  background: linear-gradient($gradient);
+  background-repeat: no-repeat;
+}
+
+.bottom-img,.top-img{
+  position: absolute;
+  z-index: -100;
+  width: 25rem;
+  height: 77%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bottom-img{
+  bottom: 0;
+  left: 0;
+  height: 20rem;
+}
+.top-img{
+  top: 0rem;
+  right: 0rem;
+}
+@media (max-width:1000px){
+  
+  main{
+    position: absolute;
+    top: 3rem;
+  }
+  .bottom-img{
+    bottom: -20rem;
+    left: 0;
+    height: 20rem;
+  }
+  .top-img{
+    top: 0rem;
+    left: 19rem;
+    width: 10rem;
+  }
+  
+ }

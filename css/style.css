@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+html body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+
+html body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+html body main .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+html body main .top h1 {
+  color: #6d708d;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
+}
+
+html body main .top .toggle {
+  cursor: pointer;
+  width: 3.8rem;
+  height: 2.3rem;
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body main .top .toggle .btn {
+  cursor: pointer;
+  position: relative;
+  width: 1.7rem;
+  height: 1.7rem;
+  top: .3rem;
+  margin: 0 .3rem;
+  border-radius: 50%;
+  background-color: #f6f6fe;
+}
+
+html body main .top span {
+  color: #b3b5c6;
+}
+
+html body main .top .top-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+}
+
+html body main .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+}
+
+html body main .card p {
+  font-weight: bold;
+}
+
+html body main .card .card-1, html body main .card .card-3 {
+  background-color: white;
+  height: 20rem;
+  -webkit-box-shadow: 0 0.5em 2em 0.5em rgba(59, 53, 85, 0.219);
+          box-shadow: 0 0.5em 2em 0.5em rgba(59, 53, 85, 0.219);
+}
+
+html body main .card .card-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+  color: white;
+  height: 23rem;
+}
+
+html body main .card .card-1 span, html body main .card .card-3 span {
+  color: #494c5f;
+}
+
+html body main .card .card-1 h1, html body main .card .card-3 h1, html body main .card .card-1 p, html body main .card .card-3 p {
+  color: #494c5f;
+}
+
+html body main .card .card-1, html body main .card .card-2, html body main .card .card-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  padding: 3rem 2rem;
+  border-radius: .6rem;
+}
+
+html body main .card .card-1 h1, html body main .card .card-2 h1, html body main .card .card-3 h1 {
+  font-size: 1.23rem;
+  font-weight: 700;
+}
+
+html body main .card .card-1 hr, html body main .card .card-2 hr, html body main .card .card-3 hr {
+  width: 18rem;
+  border-width: 0.5px;
+  margin: 0 auto;
+  border-color: transparent;
+  border-color: #b3b5c6;
+  border-style: solid;
+  opacity: 0.5;
+}
+
+html body main .card .card-1 .amount, html body main .card .card-2 .amount, html body main .card .card-3 .amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.7;
+  font-weight: bold;
+  font-size: 4.6rem;
+}
+
+html body main .card .card-1 .amount .dollar, html body main .card .card-2 .amount .dollar, html body main .card .card-3 .amount .dollar {
+  font-size: 2.6rem;
+}
+
+html body main .card .card-1 button, html body main .card .card-2 button, html body main .card .card-3 button {
+  cursor: pointer;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  font-weight: 700;
+  text-align: center;
+}
+
+html body main .card .card-1 button:hover,
+html body main .card .card-3 button:hover {
+  background: transparent;
+  border-color: #b3b5c6;
+  color: #696fdd;
+  border-width: 1px;
+}
+
+html body main .card .card-2 button:hover {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  border-width: 1px;
+}
+
+@media (max-width: 1000px) {
+  html body main .card {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.7rem;
+  }
+  html body main .attribution {
+    display: none;
+  }
+}
+
+.monthly {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.anually {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.card-2 button {
+  color: #696fdd;
+  background-color: white;
+}
+
+.card-1 button,
+.card-3 button {
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+  background-repeat: no-repeat;
+}
+
+.bottom-img, .top-img {
+  position: absolute;
+  z-index: -100;
+  width: 25rem;
+  height: 77%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bottom-img {
+  bottom: 0;
+  left: 0;
+  height: 20rem;
+}
+
+.top-img {
+  top: 0rem;
+  right: 0rem;
+}
+
+@media (max-width: 1000px) {
+  main {
+    position: absolute;
+    top: 3rem;
+  }
+  .bottom-img {
+    bottom: -20rem;
+    left: 0;
+    height: 20rem;
+  }
+  .top-img {
+    top: 0rem;
+    left: 19rem;
+    width: 10rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
